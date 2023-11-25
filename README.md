@@ -1,19 +1,16 @@
 # one_winner_lottery.aleo
 
-## Run Guide
+## Play Guide
 
-To run this program, run:
+To take part in lotery this program, run:
 ```bash
-leo run play
-
-or 
-
-./run.sh
+leo run take_part
 ```
-
-## Execute Guide
-
-To execute this program, run:
+To choose the winner, run:
 ```bash
-leo execute play
+leo run finish
+```
+To mint the badge to the winner, run:
+```bash
+leo run mint_winner_badge
 ```
