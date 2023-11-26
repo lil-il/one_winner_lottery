@@ -31,7 +31,7 @@ finalize take_part:
 
 
 function finish:
-    assert.eq self.caller aleo1fxs9s0w97lmkwlcmgn0z3nuxufdee5yck9wqrs0umevp7qs0sg9q5xxxzh;
+    assert.eq self.caller aleo15kzvazkt5nq8cjq8p894unc97r4ks0ts0msvx3xwrewj75t45v9s36g2se;
     async finish into r0;
     output r0 as one_winner_lottery.aleo/finish.future;
 
@@ -45,6 +45,6 @@ finalize finish:
 
 function mint_winner_badge:
     input r0 as address.private;
-    assert.eq self.caller aleo1fxs9s0w97lmkwlcmgn0z3nuxufdee5yck9wqrs0umevp7qs0sg9q5xxxzh;
+    assert.eq self.caller aleo15kzvazkt5nq8cjq8p894unc97r4ks0ts0msvx3xwrewj75t45v9s36g2se;
     cast r0 into r1 as Winner_badge.record;
     output r1 as Winner_badge.record;

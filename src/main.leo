@@ -24,7 +24,7 @@ program one_winner_lottery.aleo {
     // Can be called only by owner of the lottery
     transition finish() {
         // Ensure the caller is the owner.
-        assert_eq(self.caller, aleo1fxs9s0w97lmkwlcmgn0z3nuxufdee5yck9wqrs0umevp7qs0sg9q5xxxzh);
+        assert_eq(self.caller, aleo15kzvazkt5nq8cjq8p894unc97r4ks0ts0msvx3xwrewj75t45v9s36g2se);
         return then finalize();
     }
 
@@ -42,7 +42,7 @@ program one_winner_lottery.aleo {
     // Can be called only by owner of the lottery
     transition mint_winner_badge(winner: address) -> Winner_badge{
             // Ensure the caller is the owner.
-            assert_eq(self.caller, aleo1fxs9s0w97lmkwlcmgn0z3nuxufdee5yck9wqrs0umevp7qs0sg9q5xxxzh);
+            assert_eq(self.caller, aleo15kzvazkt5nq8cjq8p894unc97r4ks0ts0msvx3xwrewj75t45v9s36g2se);
             return Winner_badge {
                 owner: winner,
             };
